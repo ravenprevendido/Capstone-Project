@@ -70,9 +70,9 @@ function AppSidebar() {
       <SidebarContent>
 
         <SidebarGroup>
-        <AddNewCourseDialog>
+        {/* <AddNewCourseDialog>
           <Button>Create New Course</Button>
-        </AddNewCourseDialog>
+        </AddNewCourseDialog> */}
         </SidebarGroup>
         
         <SidebarGroup>

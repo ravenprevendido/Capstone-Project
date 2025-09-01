@@ -7,9 +7,6 @@ import { NextResponse } from "next/server";
 export async function POST(req){
     const {email, name} = await req.json();
 
-    // if(user)
-    // if not insert new user
-
     const user=await db.select().from(usersTable).where(eq(usersTable.email,email));
     // if not insert new user
     if(user?.length==0) {
@@ -25,10 +22,3 @@ export async function POST(req){
 
     return NextResponse.json(user[0])
 }
-
-
-
-                        
-
-
-

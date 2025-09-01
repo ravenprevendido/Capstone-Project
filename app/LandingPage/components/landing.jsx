@@ -20,7 +20,6 @@ export default function LandingHome({ setShowSignIn }) {
                 />
                 <h1 className="text-green-300 font-semibold text-lg whitespace-nowrap">PLMun AI Tutor</h1>
             </div>
- 
     {/* hidden mobile devices */}
             <div className="hidden md:flex gap-2">
                 {/* Sign-in Button */}
@@ -30,7 +29,6 @@ export default function LandingHome({ setShowSignIn }) {
                 >
                     Sign in
                 </Button>
-
                 {/* Sign-up Button */}
                 <Button
                     onClick={() => setShowSignIn('sign-up')}  // Open sign-up modal
@@ -42,7 +40,7 @@ export default function LandingHome({ setShowSignIn }) {
             </div>
 
         {/* Mobile Triangle Icon */}
-       <div className="md:flex gap-2">
+       <div className="flex md:hidden gap-2">
             <button onClick={() => setShowMobileOpen(!showMobileOpen)}>
                 <IoTriangle size={30} className="text-green-400" />
             </button>
@@ -53,7 +51,7 @@ export default function LandingHome({ setShowSignIn }) {
                         onClick={() => {
                             setShowSignIn('sign-in');
                             setShowMobileOpen(false);
-                        }}
+                        }}  
                         className="bg-green-600 text-white"
                     >
                         Sign in
