@@ -13,10 +13,10 @@ export default function LandingHome({ setShowSignIn }) {
         <header className="flex items-center justify-between p-6">
             <div className="flex items-center">
                 <Image
-                    src="/plmunlogo.png"
+                    src="/plmunlogo (2).png"
                     alt="PLMun Logo"
-                    width={40}
-                    height={40}
+                    width={70}
+                    height={70}
                 />
                 <h1 className="text-green-300 font-semibold text-lg whitespace-nowrap">PLMun AI Tutor</h1>
             </div>
@@ -38,7 +38,6 @@ export default function LandingHome({ setShowSignIn }) {
                     Sign up
                 </Button>
             </div>
-
         {/* Mobile Triangle Icon */}
        <div className="flex md:hidden gap-2">
             <button onClick={() => setShowMobileOpen(!showMobileOpen)}>

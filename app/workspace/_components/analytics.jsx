@@ -5,7 +5,6 @@ const Analytics = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white p-8 space-y-8">
       <h1 className="text-2xl font-semibold">Analytics</h1>
-
       {/* Top Section: Mastery & Completion Rate */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Subject Mastery */}

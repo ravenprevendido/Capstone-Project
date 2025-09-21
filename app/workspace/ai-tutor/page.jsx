@@ -30,7 +30,7 @@ const AI_Tutor = () => {
     if (lower.includes("react")) {
       return `React is a JavaScript library for building user interfaces, especially single-page applications. It uses a component-based architecture and a virtual DOM to efficiently update and render UI.`;
     }
-
+    
     if (lower.includes("html")) {
       return `HTML (HyperText Markup Language) is the standard language for creating the structure of web pages. It defines elements like headings, paragraphs, links, and images.`;
     }
@@ -50,17 +50,15 @@ const AI_Tutor = () => {
     if (lower.includes("git")) {
       return `Git is a version control system that tracks changes in your codebase. It lets developers collaborate, revert to previous versions, and manage branches efficiently.`;
     }
-
     return `That's a great question! While I don't have a specific answer preloaded, here's a general tip: try breaking your topic into smaller parts and researching each one. I'm here to help guide you. 😊`;
   };
 
   const handleSend = () => {
-    if (!input.trim()) return;
+    if (!input.trim()) return;``
 
     const userMsg = { role: "user", content: input };
     setMessages((prev) => [...prev, userMsg]);
     setInput("");
-
     setTimeout(() => {
       const aiReply = {
         role: "ai",
@@ -69,7 +67,6 @@ const AI_Tutor = () => {
       setMessages((prev) => [...prev, aiReply]);
     }, 1200);
   };
-
   return (
     <div className="bg-[#0f172a] text-white min-h-screen px-4 py-8">
       <h2 className="text-xl font-semibold mb-6">AI Tutor</h2>
@@ -78,7 +75,6 @@ const AI_Tutor = () => {
         <p className="text-gray-400 text-sm mb-4">
           Your Personal AI Assistance For Learning
         </p>
-
         <div className="space-y-4 mb-6">
           {messages.map((msg, idx) => (
             <div
@@ -103,13 +99,13 @@ const AI_Tutor = () => {
                     : "bg-gray-800 text-gray-100"
                 }`}
               >
+            
                 {msg.content}
               </div>
             </div>
           ))}
           <div ref={bottomRef}></div>
         </div>
-
         {/* Input Area */}
         <div className="flex items-center gap-2 mt-4">
           <input

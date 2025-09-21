@@ -5,10 +5,14 @@ import React from 'react'
 function AppHeader () {
     return (
         <div className='p-4 flex justify-between items-center shadow-sm'>
-            <SidebarTrigger/>
+            <SidebarTrigger className='text-green-400'/>
             <UserButton/>
         </div>
     )   
 }
 
+
+
 export default AppHeader
+
+
