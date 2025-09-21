@@ -53,7 +53,7 @@ const SideBarOptions=[
   {
     title: 'Analytics',
     icon:Compass,
-    path: '/workspace/analytics'
+    path: '/workspace/Analytics'
   },
 
   {
