@@ -1,5 +1,5 @@
 import React from 'react'
-import Analytics from '../../_components/Analytics'
+import Analytics from '../_components/Analytics'
 
 
 const page = () => {
@@ -7,9 +7,6 @@ const page = () => {
     <Analytics/>
   )
 }
-
-
-
 
 
 
