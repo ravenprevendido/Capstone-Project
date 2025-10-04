@@ -6,16 +6,11 @@ import { RedirectToSignIn, SignedOut, SignIn } from '@clerk/nextjs';
 
 function WorkspaceLayout({children}) {
   return (
-    // <>
-    //  <SignIn>
+    
     <WorkspaceProvider>
         {children}
     </WorkspaceProvider>
-    // </SignIn>
-    //  <SignedOut>
-    //     <RedirectToSignIn />
-    //   </SignedOut>
-  // </>
+    
   )
 }
 
